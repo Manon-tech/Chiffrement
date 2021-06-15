@@ -2,48 +2,17 @@
 #include <stdlib.h>
 #include <string.h>
 #include "Conversion.h"
+#define
 
 
-void conversion(char chaine[]){
-	int longueur = strlen(chaine);
-	int curseur = 0;
-	char c;
-	while(curseur < longueur){
-		c = chaine[curseur];
-		if(c == 'é' || c == 'è' || c == 'ë' || c == 'ê'){
-			chaine[curseur] = 'e';
-		}
-		if(c == 'à' || c == 'â' || c == 'ä'){
-			chaine[curseur] = 'a';
-		}
-		if(c == 'ï' || c == 'î'){
-			chaine[curseur] = 'i';
-		}
-		if(c == 'ô' || c == 'ö'){
-			chaine[curseur] = 'o';
-		}
-		if(c == 'ù' || c == 'û' || c == 'ü'){
-			chaine[curseur] = 'u';
-		}
-		if(c == 'ç'){
-			chaine[curseur] = 'c';
-		}
-		if(c == 'Â' || c == 'Ä' || c == 'À'){
-			chaine[curseur] = 'A';
-		}
-		if(c == 'Ê' || c == 'Ë' || c == 'É' || c == 'È'){
-			chaine[curseur] = 'E';
-		}
-		if(c == 'Ç'){
-			chaine[curseur] = 'C';
-		}
-		if(c == 'Ô' || c == 'Ö'){
-			chaine[curseur] = 'O';
-		}
-		if(c == 'Î' || c == 'Ï'){
-			chaine[curseur] = 'I';
-		}
-		curseur++;
-	}
+int VérifAlphaNum(char chaine*){
+
+    for( unsigned  i = 0; i < strlen(chaine); i++){
+
+        if ((chaine[i]>32 && chaine[i]<48) ||(chaine[i]>57 && chaine[i]<65) ||(chaine[i]>90 && chaine[i]<97)|| (chaine[i]>122 && chaine[i]<=127) || (chaine[i]>32 && chaine[i]<48)  ){
+            return 0;
+        }
+
+    }
 }
 
