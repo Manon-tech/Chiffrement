@@ -28,6 +28,21 @@ void conversion(char chaine[]){
 		if(c == 'ç'){
 			chaine[curseur] = 'c';
 		}
+		if(c == 'Â' || c == 'Ä' || c == 'À'){
+			chaine[curseur] = 'A';
+		}
+		if(c == 'Ê' || c == 'Ë' || c == 'É' || c == 'È'){
+			chaine[curseur] = 'E';
+		}
+		if(c == 'Ç'){
+			chaine[curseur] = 'C';
+		}
+		if(c == 'Ô' || c == 'Ö'){
+			chaine[curseur] = 'O';
+		}
+		if(c == 'Î' || c == 'Ï'){
+			chaine[curseur] = 'I';
+		}
 		curseur++;
 	}
 }
