@@ -4,9 +4,10 @@
 #include "Cesar.h"
 
 
-void cesar(char chaine[], int n){
+void decodeCesar(char chaine[], int n){
 	int longueur = strlen(chaine);
 	int curseur = 0;
+	n = 26 - n;
 	while(curseur < longueur){
 		if(chaine[curseur]>= 'a' && chaine[curseur] <= 'z'){
 			chaine[curseur] = 'a' + ((chaine[curseur]-'a')+n) %26;
@@ -15,7 +16,7 @@ void cesar(char chaine[], int n){
 			chaine[curseur] = 'A' + (chaine[curseur]-'A'+n) %26;
 		}
 		if(chaine[curseur]>= '0' && chaine[curseur] <= '9'){
-			chaine[curseur] = '0' + (chaine[curseur]-'0'+n) %26;
+			chaine[curseur] = '0' + (chaine[curseur]-'0'+n) %10;
 		}
 		curseur++;
 	}	
