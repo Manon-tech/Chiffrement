@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "VerifAlphaNum.h"
-#include "César.h"
+#include "Cesar.h"
 #include "VerifCode.h"
 
 int main(){
@@ -11,6 +11,8 @@ int main(){
     char message[100];
     //variable du choix de l'utilisateur
     char choixM;
+    //variable choix de la clé
+    int choixCle;
     printf("Saisir le message à chiffrer ou à déchiffrer  :");
     printf("\n");
     //récupération du message utilisateur
@@ -29,7 +31,7 @@ int main(){
            "   - v pour Vigenère\n");
 
     scanf("%c", choixM);
-    while(choixM!=c||choixM!=v){
+    while(choixM!='c'||choixM!='v'){
         printf("Entrée invalide recommencez svp : ");
         scanf("%c", choixM);
         printf("\n");
@@ -38,11 +40,11 @@ int main(){
     printf("\n");
     //César choix clé
     printf("Choisir la clé ( elle ne doit pas être négative ou nulle :  )");
-    scanf("d", choixClé);
+    scanf("%d", choixCle);
 
-    while(VerifCode(choixClé)==1){
+    while(VerifCode(choixCle)==1){
         printf("Entrée invalide recommencez svp : ");
-        scanf("d", choixClé);
+        scanf("%d", choixCle);
         printf("\n");
     }
     printf("\n");
