@@ -5,12 +5,12 @@
 
 
 int main(){
-    char *message;
+    char message[100];
     printf("Saisir le message à chiffrer ou à déchiffrer  :");
-    scanf("%p", &message );
-  if( 1 == verifAlphaNum(message) ){
+    scanf("%s", message );
+  if(  verifAlphaNum(message)==1 ){
 
       printf("Message incorrect recommencez svp : ");
-      scanf("%p", &message );
+      scanf("%s", message );
   }
 }
