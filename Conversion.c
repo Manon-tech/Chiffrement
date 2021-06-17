@@ -5,45 +5,17 @@
 
 
 void conversion(char chaine[]){
+	char accent[] = {'é','è','ë','ê','à','â','ä','ï','î','ô','ö','ù','û','ü','ç','Â','Ä','À','Ê','Ë','É','È','Ç','Ô','Ö','Î','Ï'};
+	char remplacement[] = {'e','e','e','e','a','a','a','i','i','o','o','u','u','u','c','A','A','A','E','E','E','E','C','O','O','I','I'};
 	int longueur = strlen(chaine);
-	int curseur = 0;
 	char c;
-	while(curseur < longueur){
+	for(int curseur = 0; curseur < longueur; curseur++){
 		c = chaine[curseur];
-		if(c == 'é' || c == 'è' || c == 'ë' || c == 'ê'){
-			chaine[curseur] = 'e';
+		for(int curseur2 = 0; curseur2 < 27; curseur2++){
+			if(c == accent[curseur2]){
+				chaine[curseur] = remplacement[curseur2];
+			}
 		}
-		if(c == 'à' || c == 'â' || c == 'ä'){
-			chaine[curseur] = 'a';
-		}
-		if(c == 'ï' || c == 'î'){
-			chaine[curseur] = 'i';
-		}
-		if(c == 'ô' || c == 'ö'){
-			chaine[curseur] = 'o';
-		}
-		if(c == 'ù' || c == 'û' || c == 'ü'){
-			chaine[curseur] = 'u';
-		}
-		if(c == 'ç'){
-			chaine[curseur] = 'c';
-		}
-		if(c == 'Â' || c == 'Ä' || c == 'À'){
-			chaine[curseur] = 'A';
-		}
-		if(c == 'Ê' || c == 'Ë' || c == 'É' || c == 'È'){
-			chaine[curseur] = 'E';
-		}
-		if(c == 'Ç'){
-			chaine[curseur] = 'C';
-		}
-		if(c == 'Ô' || c == 'Ö'){
-			chaine[curseur] = 'O';
-		}
-		if(c == 'Î' || c == 'Ï'){
-			chaine[curseur] = 'I';
-		}
-		curseur++;
 	}
 }
 
