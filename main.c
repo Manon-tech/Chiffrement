@@ -13,6 +13,7 @@ int main(){
     char choixM;
     //variable choix de la clé
     int choixCle;
+    int verif;
     printf("Saisir le message à chiffrer ou à déchiffrer  :");
     printf("\n");
     //récupération du message utilisateur
