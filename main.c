@@ -4,6 +4,7 @@
 #include "VerifAlphaNum.h"
 #include "Cesar.h"
 #include "VerifCode.h"
+#include <stdbool.h>
 
 int main(){
 
@@ -13,17 +14,25 @@ int main(){
     char choixM;
     //variable choix de la clé
     int choixCle;
-    int verif;
+    bool verif==false;
     printf("Saisir le message à chiffrer ou à déchiffrer  :");
     printf("\n");
     //récupération du message utilisateur
     scanf("%s", message );
+    if(verifAlphaNum(message)==1){
+        printf("Message incorrect recommencez svp : ");
+        scanf("%s", message );
+        verif==false;}
     // boucle de demande si le message saisi est incorrect
-  while (  verifAlphaNum(message)==1 ){
-
+  while ( verif==false){
+      if(verifAlphaNum(message)==1){
       printf("Message incorrect recommencez svp : ");
       scanf("%s", message );
-      printf("\n");
+      verif==false;
+      printf("\n");}else{
+          verif==true;
+
+      }
   }
 
   //choix de la méthode pour chiffrer ou déchiffrer
