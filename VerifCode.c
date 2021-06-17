@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+#include "VerifCode.h"
 
 int VerifCode(char *code){
 
