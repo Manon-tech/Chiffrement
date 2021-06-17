@@ -15,9 +15,9 @@ int verifAlphaNum(char *message){
         for(unsigned j = 0; j < 32; j++){
             if(message[i] == TabAlphaNum[j]){
 
-                return 1;
+                return 0;
             }
         }
     }
-    return 0;
+    return 1;
 }

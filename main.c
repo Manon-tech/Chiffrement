@@ -14,7 +14,7 @@ int main(){
     char choixM;
     //variable choix de la clé
     int choixCle;
-    bool verif==false;
+    bool verif=false;
     printf("Saisir le message à chiffrer ou à déchiffrer  :");
     printf("\n");
     //récupération du message utilisateur
@@ -22,16 +22,16 @@ int main(){
     if(verifAlphaNum(message)==1){
         printf("Message incorrect recommencez svp : ");
         scanf("%s", message );
-        verif==false;}
+        verif=false;}
     // boucle de demande si le message saisi est incorrect
-  while ( verif==false){
+  while ( verif){
       if(verifAlphaNum(message)==1){
       printf("Message incorrect recommencez svp : ");
       scanf("%s", message );
-      verif==false;
-      printf("\n");}else{
-          verif==true;
-
+      verif=false;
+      printf("\n");}
+      else{
+      	verif=true;
       }
   }
 
