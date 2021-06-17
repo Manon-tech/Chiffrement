@@ -5,5 +5,5 @@
 
 
 
-int VerifAlphaNum(char *message);
+int verifAlphaNum(char *message);
 
