@@ -5,5 +5,5 @@
 #define 
 
 
-int VérifAlphaNum(char chaine*);
+int VérifAlphaNum(char *message);
 
