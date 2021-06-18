@@ -4,7 +4,6 @@
 #include "Conversion.h"
 
 
-
 void conversion(char chaine[]){
 	char accent[] = "éèëêàâäïîôöùûüçÂÄÀÊËÉÈÇÔÖÎÏ";
 	char remplace[] = "eeeeaaaiioouuucAAAEEEECOOII";
@@ -20,5 +19,3 @@ void conversion(char chaine[]){
 		}
 	}
 }
-
-
