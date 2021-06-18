@@ -6,14 +6,19 @@
 
 
 void conversion(char chaine[]){
-	wchar_t accent[27] = L"éèëêàâäïîôöùûüçÂÄÀÊËÉÈÇÔÖÎÏ";
-	wchar_t remplacement[27] = L"eeeeaaaiioouuucAAAEEEECOOII";
+	char accent[] = "éèëêàâäïîôöùûüçÂÄÀÊËÉÈÇÔÖÎÏ";
+	char remplace[] = "eeeeaaaiioouuucAAAEEEECOOII";
+	
 	for(int curseur = 0; curseur < strlen(chaine); curseur++){
-		for(int curseur2 = 0; curseur2 < wcslen(accent); curseur2++){
+		int curseur2 = 0;
+		while(curseur2 < strlen(accent)){
 			if(chaine[curseur] == accent[curseur2]){
-				chaine[curseur] = remplacement[curseur2];
+				chaine[curseur] = remplace[curseur2];
+				
 			}
+			curseur2++;
 		}
 	}
 }
+
 
