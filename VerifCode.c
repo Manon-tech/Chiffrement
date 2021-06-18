@@ -3,7 +3,7 @@
 #include <string.h>
 #include "VerifCode.h"
 
-int VerifCode(char *code){
+int VerifCode(wchar_t *code){
 
     code="012332";
     for(unsigned i = 0; i < strlen(code); i++){

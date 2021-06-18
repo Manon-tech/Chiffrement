@@ -2,6 +2,6 @@
 #include <stdlib.h>
 #include "Affichage.h"
 
-void afficher(char chaine[]){
+void afficher(wchar_t chaine[]){
 	printf("%s\n", chaine);
 }

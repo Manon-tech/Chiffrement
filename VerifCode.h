@@ -3,4 +3,4 @@
 #include <string.h>
 
 
-int VerifCode(char *code);
+int VerifCode(wchar_t *code);

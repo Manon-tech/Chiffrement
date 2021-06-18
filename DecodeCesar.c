@@ -4,7 +4,7 @@
 #include "Cesar.h"
 
 
-void decodeCesar(char chaine[], int n){
+void decodeCesar(wchar_t chaine[], int n){
 	int longueur = strlen(chaine);
 	int curseur = 0;
 	n = 26 - n;

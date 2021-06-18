@@ -4,4 +4,4 @@
 #include "DecodeCesar.h"
 
 
-void decodeCesar(char chaine[], int n);
+void decodeCesar(wchar_t chaine[], int n);

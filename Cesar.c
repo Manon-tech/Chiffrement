@@ -4,7 +4,7 @@
 #include "Cesar.h"
 
 
-void cesar(char chaine[], int n){
+void cesar(wchar_t chaine[], int n){
 	int longueur = strlen(chaine);
 	int curseur = 0;
 	while(curseur < longueur){

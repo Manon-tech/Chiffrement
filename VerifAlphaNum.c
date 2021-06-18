@@ -4,7 +4,7 @@
 #include "VerifAlphaNum.h"
 
 
-int verifAlphaNum(char *message){
+int verifAlphaNum(wchar_t *message){
 
 
     wchar_t TabAlphaNum[32]=

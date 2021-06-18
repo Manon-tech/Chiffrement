@@ -2,4 +2,4 @@
 #include <stdlib.h>
 #include <string.h>
 
-void cesar(char chaine[], int n);
+void cesar(wchar_t chaine[], int n);

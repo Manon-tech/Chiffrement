@@ -4,9 +4,9 @@
 #include "Conversion.h"
 
 
-void conversion(char chaine[]){
-	char accent[] = "éèëêàâäïîôöùûüçÂÄÀÊËÉÈÇÔÖÎÏ";
-	char remplace[] = "eeeeaaaiioouuucAAAEEEECOOII";
+void conversion(wchar_t chaine[]){
+	wchar_t accent[] = L"éèëêàâäïîôöùûüçÂÄÀÊËÉÈÇÔÖÎÏ";
+	wchar_t remplace[] = L"eeeeaaaiioouuucAAAEEEECOOII";
 	
 	for(int curseur = 0; curseur < strlen(chaine); curseur++){
 		int curseur2 = 0;
