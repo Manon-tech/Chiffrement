@@ -11,7 +11,7 @@ int verifAlphaNum(wchar_t *message){
             {'@',',','&','"','(','!',')','-','_','$','*','=','+',
              '#','?','.',';','/','\\','|','%','<','>','_','{','}','[',']'};
 
-    for(unsigned i = 0; i < strlen(message); i++){
+    for(unsigned i = 0; i < wcslen(message); i++){
         for(unsigned j = 0; j < 32; j++){
             if(message[i] == TabAlphaNum[j]){
 

@@ -4,18 +4,17 @@
 #include "Conversion.h"
 
 
-void conversion(wchar_t chaine[]){
-	wchar_t accent[] = L"éèëêàâäïîôöùûüçÂÄÀÊËÉÈÇÔÖÎÏ";
-	wchar_t remplace[] = L"eeeeaaaiioouuucAAAEEEECOOII";
-	
-	for(int curseur = 0; curseur < strlen(chaine); curseur++){
-		int curseur2 = 0;
-		while(curseur2 < strlen(accent)){
-			if(chaine[curseur] == accent[curseur2]){
-				chaine[curseur] = remplace[curseur2];
-				
-			}
-			curseur2++;
-		}
-	}
+void conversion(wchar_t *chaine){
+
+    wchar_t accent[24] = L"éèëêàâäïîôöùûüçÂÄÀÊËÉÈÇÔÖÎÏ";
+    wchar_t remplace[24] = L"eeeeaaaiioouuucAAAEEEECOOII";
+
+    for(unsigned curseur = 0; curseur < wcslen(chaine); curseur++){
+        for(unsigned curseur1 = 0; curseur1 < 24; curseur1++){
+            if(chaine[curseur] == accent[curseur1]){
+                chaine[curseur] = remplace[curseur1];
+            }
+        }
+    }
 }
+
