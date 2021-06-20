@@ -2,11 +2,11 @@
 *  ASR => M2101                                                               *
 *******************************************************************************
 *                                                                             *
-*  N° de Sujet :    3                                                          *
+*  N° de Sujet :    3                                                         *
 *                                                                             *
 *******************************************************************************
 *                                                                             *
-*  Intitulé :   Chiffrement de messages                                                            *
+*  Intitulé :   Chiffrement de messages                                       *
 *                                                                             *
 *******************************************************************************
 *                                                                             *
@@ -16,7 +16,7 @@
 *                                                                             *
 *******************************************************************************
 *                                                                             *
-*  Nom du fichier :    DecodeVigenere.c                                             *
+*  Nom du fichier :    DecodeVigenere.c                                       *
 *                                                                             *
 ******************************************************************************/
 
@@ -27,7 +27,7 @@
 //#include "DecodeVigenere.h"
 
 
-int vigenere(wchar_t *message, wchar_t *cle){
+int decodeVigenere(wchar_t *message, wchar_t *cle){
 
 
     wchar_t lettres[26] = L"ABCDEFGHIJKLMNOPQRSTUVWXYZ";
