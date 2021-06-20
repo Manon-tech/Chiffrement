@@ -2,4 +2,4 @@
 #include <stdlib.h>
 
 
-void conversion(wchar_t chaine[]);
+void conversion(wchar_t *chaine);

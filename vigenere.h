@@ -3,4 +3,4 @@
 #include <string.h>
 
 
-void vigenere(wchar_t *chaine, wchar_t cle[]);
+int vigenere(wchar_t *message, wchar_t *cle);
