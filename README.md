@@ -28,15 +28,15 @@
 
 void afficher(wchar_t *chaine); 
 
-void EncodeCesar(wchar_t *chaine, int n);
+void EncodeCesar(wchar_t *chaine, int n);** clé ==0 ou autre que num = erreur **
 
 void conversion(wchar_t *chaine);
 
-void decodeCesar(wchar_t *chaine, int n);
+void decodeCesar(wchar_t *chaine, int n);** clé==0 ou autre que num= erreur **
 
-void EncodeCesar(wchar_t *chaine, int n);
+void EncodeCesar(wchar_t *chaine, int n); clé==0 ou autre que num= erreur **
 
-int verifAlphaNum(wchar_t *message);
+int verifAlphaNum(wchar_t *message);  
 
 int VerifCode(wchar_t *code);
 
@@ -46,7 +46,7 @@ void ViderBuffer();
 
 int vigenere(wchar_t *message, wchar_t *cle);
 
-void sauvegardeDansFichier(wchar_t *message);
+void sauvegardeDansFichier(wchar_t *message); 
 
 
 int main();
