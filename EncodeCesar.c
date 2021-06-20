@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "Cesar.h"
+#include "EncodeCesar.h"
 
 
 void EncodeCesar(wchar_t *chaine, int n){

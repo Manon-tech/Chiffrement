@@ -10,7 +10,7 @@
 #include "DecodeCesar.h"
 #include "Affichage.h"
 #include "VidageBuffer.h"
-#include "vigenere.h"
+//#include "vigenere.h"
 #include "sauvegardeDansFichier.h"
 
 
@@ -43,7 +43,7 @@ int main(){
     printf("\n");
 
     //afficher le message saisi par l'utilisateur
-    afficher(message);
+    //afficher(message);
 
 
     //saut de 3 lignes
@@ -105,7 +105,7 @@ int main(){
         int clef = wcstol(cle, &finSaisie, 2);
 
         //boucle si clé ==0
-        while(clef == 0){
+        while(clef == '0'){
             printf("Mauvais code, Veuillez recommencer\n");
             ViderBuffer();
             fgetws(cle, 2, stdin);
@@ -124,37 +124,7 @@ int main(){
 
     }
 
-    //choix du Vigeenere
-    if(choixMf=='v'){
-        printf("choix Vigenere");
-
-        printf("Entrez la clé (elle doit être différente de 0) : ");
-
-        // déclaration taille clé
-        wchar_t cle[2];
-        //pointeur de fin de saisir pour wcstol
-        wchar_t *finSaisie;
-        ViderBuffer();
-        fgetws(cle, 2, stdin);
-
-        int clef = wcstol(cle, &finSaisie, 2);
-
-        //boucle si clé ==0
-        while(clef == 0){
-            printf("Mauvais code, Veuillez recommencer\n");
-            ViderBuffer();
-            fgetws(cle, 2, stdin);
-            clef = wcstol(cle, &finSaisie, 2);
-        }
-
-        if(DouE=='e'){
-            vigenere(message);
-        }else{
-            printf("N'a pas été réalisé");
-        }
-
-        sauvegardeDansFichier(message);
-    }
+    
 
 }
 
