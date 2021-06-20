@@ -26,16 +26,26 @@
 
 # Signature des fonction
 
-void afficher(wchar_t *chaine);
+void afficher(wchar_t *chaine); 
+
 void EncodeCesar(wchar_t *chaine, int n);
+
 void conversion(wchar_t *chaine);
+
 void decodeCesar(wchar_t *chaine, int n);
+
 void EncodeCesar(wchar_t *chaine, int n);
+
 int verifAlphaNum(wchar_t *message);
+
 int VerifCode(wchar_t *code);
+
 void majuscules(wchar_t *chaine);
+
 void ViderBuffer();
+
 int vigenere(wchar_t *message, wchar_t *cle);
+
 void sauvegardeDansFichier(wchar_t *message);
 
 
