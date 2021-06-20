@@ -34,6 +34,10 @@ void conversion(wchar_t *chaine);
 
 void decodeCesar(wchar_t *chaine, int n);** clé==0 ou autre que num= erreur **
 
+
+
+lien du depôt : https://github.com/Manon-tech/Chiffrement
+
 void EncodeCesar(wchar_t *chaine, int n); clé==0 ou autre que num= erreur **
 
 int verifAlphaNum(wchar_t *message);  
