@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "vignere.h"
+#include "vigenere.h"
 
 void vigenere(wchar_t chaine[], wchar_t cle[]){
 	wchar_t lettres[26] = L"ABCDEFGHIJKLMNOPQRSTUVWXYZ";
